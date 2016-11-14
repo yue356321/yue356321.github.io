@@ -57,6 +57,7 @@
 
     }
     #div1{
+        position: relative;
         margin-top: 30px;
     }
     #div1 ul{
@@ -64,13 +65,30 @@
         overflow: hidden;
     }
     #div1 ul li{
+        
         text-align: center;
         float: left;
-        width:30%;
+        width:25%;
     }
    #div1 ul li a{
             color:#fff;
           font-size: 24px;
+    }
+    #div1 ul li #div2{
+        position: absolute;
+        right:0;
+        top:24px;
+
+        color: #fff;
+        display: none;
+    }
+    #div1 ul li #div2 p{
+       text-align: left;
+       font-size: 24px;
+    }
+    #div1 ul li:hover #div2{
+        background: #000;
+        display: block;
     }
     .swiper-container #divBox{
         overflow: hidden;
@@ -110,7 +128,83 @@
     </script>
 </head>
 <body>
-    <!-- 移动的高光 -->
+  
+
+
+    <div class="header"> 
+        <img src="img/logo.jpg" height="60" width="170">
+      <h1><a href="#" class="title">常越个人娱乐网站</a></h1>
+      <p>一个走在web之路的技术员个人娱乐网站</p>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+       <input name=ie type=hidden value=utf-8>
+
+        <div class="swiper-wrapper">
+            <img src="img/1.jpg" alt="" class="swiper-slide" >
+            <img src="img/2.jpg" alt="" class="swiper-slide" >
+            <img src="img/3.jpg" alt="" class="swiper-slide" >
+            <img src="img/14.jpg" alt="" class="swiper-slide" >
+            <img src="img/13.jpg" alt="" class="swiper-slide" >
+            <img src="img/7.jpg" alt="" class="swiper-slide" >
+            <img src="img/8.jpg" alt="" class="swiper-slide" >
+            <img src="img/15.jpg" alt="" class="swiper-slide" >  
+            <img src="img/9.jpg" alt="" class="swiper-slide" >
+            <img src="img/11.jpg" alt="" class="swiper-slide" >
+            <img src="img/12.jpg" alt="" class="swiper-slide" >
+            <img src="img/6.jpg" alt="" class="swiper-slide" >
+            <img src="img/4.jpg" alt="" class="swiper-slide" >
+            <img src="img/5.jpg" alt="" class="swiper-slide" > 
+            <img src="img/16.jpg" alt="" class="swiper-slide" > 
+
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"> </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div id="div1">
+             <ul>
+                <li><a href="plug/yue/yue.html" title="网站首页">个人分首页</a></li>
+                <li><a href="plug/新浪.html" title="网站首页">静态项目</a></li>
+                <li><a href="https://y.qq.com/portal/player.html">在线音乐</a></li>
+                <li><a href="javascript:;" >个人简历</a>
+                    <div id="div2">
+                       
+                          <p>姓名：常越</p>
+                          <p>职业：Web前端设计师、网页设计</p>
+                          <p>电话：15536901367</p>
+                          <p>Email：changyuelll@163.com</p>
+                    </div>
+                </li>
+            
+                
+              
+                
+            </ul>  
+         </div>
+         <div id="divBox">
+            <div class="box">
+                <a href="plug/屏保.html" class="a1"><img src="img/1.png" alt=""></a>
+                <a href="plug/屏保.html" class="a2"><h2>屏保动画</h2></a>
+            </div>
+            <div class="box">
+                <a href="plug/旋转图片.html" class="a1"><img src="img/img2.1.jpg" alt=""></a>
+                <a href="plug/旋转图片.html" class="a2"><h2>图片动画</h2></a>
+            </div>
+            <div class="box">
+                <a href="plug/旋转立方.html" class="a1"><img src="img/12.jpg" alt=""></a>
+                <a href="plug/旋转立方.html" class="a2"><h2>立方图</h2></a>
+            </div>
+            <div class="box">
+                <a href="plug/捕鱼.html" class="a1"><img src="img/yu.jpg" alt=""></a>
+                <a href="plug/捕鱼.html" class="a2"><h2>捕鱼</h2></a>
+            </div>
+        </div>
+    </div>
+      <!-- 移动的高光 -->
 
 <div class="yi_guang_01" style="left:50%;top:0;margin:-115px 0 0 -108px;"><img src="img/yi_guang_01.png"></div>
 <div class="yi_guang_02" style="left:50%;top:0;margin:-115px 0 0 -308px;"><img src="img/yi_guang_01.png"></div>
@@ -202,73 +296,6 @@
 <div class="stars stars_02" style="margin:-310px 0 0 690px;"><img src="img/stars_01.png"></div>
 <div class="stars stars_03" style="margin:-307px 0 0 393px;"><img src="img/stars_02.png"></div>
 <div class="stars stars_03" style="margin:193px 0 0 493px;"><img src="img/stars_02.png"></div>
-
-
-    <div class="header"> 
-        <img src="img/logo.jpg" height="60" width="170">
-      <h1><a href="#" class="title">常越个人娱乐网站</a></h1>
-      <p>一个走在web之路的技术员个人娱乐网站</p>
-    </div>
-
-    <!-- Swiper -->
-    <div class="swiper-container">
-       <input name=ie type=hidden value=utf-8>
-
-        <div class="swiper-wrapper">
-            <img src="img/1.jpg" alt="" class="swiper-slide" >
-            <img src="img/2.jpg" alt="" class="swiper-slide" >
-            <img src="img/3.jpg" alt="" class="swiper-slide" >
-            <img src="img/14.jpg" alt="" class="swiper-slide" >
-            <img src="img/13.jpg" alt="" class="swiper-slide" >
-            <img src="img/7.jpg" alt="" class="swiper-slide" >
-            <img src="img/8.jpg" alt="" class="swiper-slide" >
-            <img src="img/15.jpg" alt="" class="swiper-slide" >  
-            <img src="img/9.jpg" alt="" class="swiper-slide" >
-            <img src="img/11.jpg" alt="" class="swiper-slide" >
-            <img src="img/12.jpg" alt="" class="swiper-slide" >
-            <img src="img/6.jpg" alt="" class="swiper-slide" >
-            <img src="img/4.jpg" alt="" class="swiper-slide" >
-            <img src="img/5.jpg" alt="" class="swiper-slide" > 
-            <img src="img/16.jpg" alt="" class="swiper-slide" > 
-
-
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"> </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div id="div1">
-             <ul>
-                <li><a href="plug/yue/yue.html" title="网站首页">个人分首页</a></li>
-                <li><a href="plug/新浪.html" title="网站首页">静态项目</a></li>
-                <li><a href="https://y.qq.com/portal/player.html">在线音乐</a></li>
-            
-                
-              
-                
-            </ul>  
-         </div>
-         <div id="divBox">
-            <div class="box">
-                <a href="plug/屏保.html" class="a1"><img src="img/1.png" alt=""></a>
-                <a href="plug/屏保.html" class="a2"><h2>屏保动画</h2></a>
-            </div>
-            <div class="box">
-                <a href="plug/旋转图片.html" class="a1"><img src="img/img2.1.jpg" alt=""></a>
-                <a href="plug/旋转图片.html" class="a2"><h2>图片动画</h2></a>
-            </div>
-            <div class="box">
-                <a href="plug/旋转立方.html" class="a1"><img src="img/12.jpg" alt=""></a>
-                <a href="plug/旋转立方.html" class="a2"><h2>立方图</h2></a>
-            </div>
-            <div class="box">
-                <a href="plug/捕鱼.html" class="a1"><img src="img/yu.jpg" alt=""></a>
-                <a href="plug/捕鱼.html" class="a2"><h2>捕鱼</h2></a>
-            </div>
-        </div>
-    </div>
-
     
     
    
