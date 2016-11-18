@@ -34,7 +34,31 @@
  		font-size: 100px;
 	}
 	
-	 
+	 #clock_3d { /*height: 183px;*/ height:170px; position: relative; /*padding-bottom: 50px;*/ z-index: 1; }
+#clock_3d .container { position: absolute; left: 0; top: 0; width: 100%; height: 100%; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -ms-transform-style: preserve-3d; -o-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-perspective: 1300px; -moz-perspective: 1300px; -ms-perspective: 1300px; -o-perspective: 1300px; perspective: 1300px; -webkit-transform: rotateX(0deg) rotateY(0deg); -moz-transform: rotateX(0deg) rotateY(0deg); -ms-transform: rotateX(0deg) rotateY(0deg); -o-transform: rotateX(0deg) rotateY(0deg); transform: rotateX(0deg) rotateY(0deg); text-align: center; }
+#clock_3d .num_container { display: inline-block; width: 70px; height: 70px; -background: white; position: relative; margin: 55px 10px 0 10px; }
+#clock_3d span.split { display: inline-block; width: 20px; }
+#clock_3d ul { -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -ms-transform-style: preserve-3d; -o-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-perspective: 1300px; -moz-perspective: 1300px; -ms-perspective: 1300px; -o-perspective: 1300px; perspective: 1300px; -webkit-transform: rotateX(0deg) scale(0); -moz-transform: rotateX(0deg) scale(0); -ms-transform: rotateX(0deg) scale(0); -o-transform: rotateX(0deg) scale(0); transform: rotateX(0deg) scale(0); }
+#clock_3d ul, #clock_3d li { position: absolute; width: 100%; height: 100%; left: 0; top: 0; }
+#clock_3d li { line-height: 70px; text-align: center; font-size: 30px; color: white; border: 1px solid #7D689D; text-shadow: 0 0 5px #BB90FC, 0 0 6px #BB90FC, 0 0 7px #BB90FC, 0 0 8px #BB90FC, 0 0 9px #BB90FC; font-family: Arial, Helvetica, sans-serif; }
+#clock_3d li span { display: block; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -ms-backface-visibility: hidden; -o-backface-visibility: hidden; /*backface-visibility: hidden;*/ -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -ms-transform-style: preserve-3d; -o-transform-style: preserve-3d; transform-style: preserve-3d; transform-style: preserve-3d; }
+#clock_3d li.clock_3d_front { -webkit-transform: rotateX(0deg) translateZ(35px); -moz-transform: rotateX(0deg) translateZ(35px); -ms-transform: rotateX(0deg) translateZ(35px); -o-transform: rotateX(0deg) translateZ(35px); transform: rotateX(0deg) translateZ(35px); }
+#clock_3d li.clock_3d_back { -webkit-transform: rotateX(-180deg) translateZ(35px); -moz-transform: rotateX(-180deg) translateZ(35px); -ms-transform: rotateX(-180deg) translateZ(35px); -o-transform: rotateX(-180deg) translateZ(35px); transform: rotateX(-180deg) translateZ(35px); }
+#clock_3d li.clock_3d_top { -webkit-transform: rotateX(90deg) translateZ(35px); -moz-transform: rotateX(90deg) translateZ(35px); -ms-transform: rotateX(90deg) translateZ(35px); -o-transform: rotateX(90deg) translateZ(35px); transform: rotateX(90deg) translateZ(35px); }
+#clock_3d li.clock_3d_bottom { -webkit-transform: rotateX(-90deg) translateZ(35px); -moz-transform: rotateX(-90deg) translateZ(35px); -ms-transform: rotateX(-90deg) translateZ(35px); -o-transform: rotateX(-90deg) translateZ(35px); transform: rotateX(-90deg) translateZ(35px); }
+/*全屏作品展示*//*↓↓↓↓3d模式↓↓↓↓*/
+.proList_full_3d { position: absolute; left: 0; top: 100px; width: 100%; height: 70%; z-index: 2; }
+.proList_full_3d ul { -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -ms-transform-style: preserve-3d; -o-transform-style: preserve-3d; transform-style: preserve-3d; position: absolute; top: 0; width: 25%; height: 100%; -webkit-transition: 1s all ease; -moz-transition: 1s all ease; -ms-transition: 1s all ease; -o-transition: 1s all ease; transition: 1s all ease; }
+.proList_full_3d ul li { width: 100%; height: 30%; margin-top: 2.5%; -webkit-transform-origin: top; -webkit-backface-visibility: hidden; -webkit-transform: perspective(1000px) translateY(-10px) rotateX(-180deg); -moz-transform-origin: top; -moz-backface-visibility: hidden; -moz-transform: perspective(1000px) translateY(-10px) rotateX(-180deg); -ms-transform-origin: top; -ms-backface-visibility: hidden; -ms-transform: perspective(1000px) translateY(-10px) rotateX(-180deg); -o-transform-origin: top; -o-backface-visibility: hidden; -o-transform: perspective(1000px) translateY(-10px) rotateX(-180deg); backface-visibility: hidden; transform: perspective(1000px) translateY(-10px) rotateX(-180deg); background-size: 100% 100%; cursor: pointer;/*-webkit-transition:1s all ease;*/ }
+.proList_full_3d ul li:hover { box-shadow: 0 0 5px 3px #0164C5, inset 0 0 2px 4px #0164C5; }
+.proList_full_3d ul li img { width: 100%; height: 100%; }
+.proList_full_3d .l3 { left: -25%; -webkit-transform: perspective(1000px) rotateY(45deg) scale(1.43) translateX(0px); -moz-transform: perspective(1000px) rotateY(45deg) scale(1.43) translateX(0px); -ms-transform: perspective(1000px) rotateY(45deg) scale(1.43) translateX(0px); -o-transform: perspective(1000px) rotateY(45deg) scale(1.43) translateX(0px); transform: perspective(1000px) rotateY(45deg) scale(1.43) translateX(0px); }
+.proList_full_3d .l2 { left: 0; -webkit-transform: perspective(1000px) rotateY(26deg) scale(1.124) translateX(6px); -moz-transform: perspective(1000px) rotateY(26deg) scale(1.124) translateX(6px); -ms-transform: perspective(1000px) rotateY(26deg) scale(1.124) translateX(6px); -o-transform: perspective(1000px) rotateY(26deg) scale(1.124) translateX(6px); transform: perspective(1000px) rotateY(26deg) scale(1.124) translateX(6px); }
+.proList_full_3d .l1 { left: 25%; -webkit-transform: perspective(1000px) rotateY(10deg) translateX(4px); -moz-transform: perspective(1000px) rotateY(10deg) translateX(4px); -ms-transform: perspective(1000px) rotateY(10deg) translateX(4px); -o-transform: perspective(1000px) rotateY(10deg) translateX(4px); transform: perspective(1000px) rotateY(10deg) translateX(4px); }
+.proList_full_3d .r1 { left: 50%; -webkit-transform: perspective(1000px) rotateY(-10deg) translateX(-4px); -moz-transform: perspective(1000px) rotateY(-10deg) translateX(-4px); -ms-transform: perspective(1000px) rotateY(-10deg) translateX(-4px); -o-transform: perspective(1000px) rotateY(-10deg) translateX(-4px); transform: perspective(1000px) rotateY(-10deg) translateX(-4px); }
+.proList_full_3d .r2 { left: 75%; -webkit-transform: perspective(1000px) rotateY(-26deg) scale(1.124) translateX(-6px); -moz-transform: perspective(1000px); -moz-transform: perspective(1000px) rotateY(-26deg) scale(1.124) translateX(-6px); -ms-transform: perspective(1000px); -ms-transform: perspective(1000px) rotateY(-26deg) scale(1.124) translateX(-6px); -o-transform: perspective(1000px); -o-transform: perspective(1000px) rotateY(-26deg) scale(1.124) translateX(-6px); transform: perspective(1000px); transform: perspective(1000px) rotateY(-26deg) scale(1.124) translateX(-6px); }
+.proList_full_3d .r3 { left: 100%; -webkit-transform: perspective(1000px) rotateY(-45deg) scale(1.43) translateX(0px); -moz-transform: perspective(1000px) rotateY(-45deg) scale(1.43) translateX(0px); -ms-transform: perspective(1000px) rotateY(-45deg) scale(1.43) translateX(0px); -o-transform: perspective(1000px) rotateY(-45deg) scale(1.43) translateX(0px); transform: perspective(1000px) rotateY(-45deg) scale(1.43) translateX(0px); }/*↑↑↑↑3d模式↑↑↑↑*//*↓↓↓↓2d模式↓↓↓↓*/
+.proList_full_2d { background: yellow; }
 	</style>
     <script>
         var oA = new Audio();
@@ -288,6 +312,7 @@
 </div>
 
 <canvas id="canvas" ></canvas>
+<div id="clock_3d"></div>
 <script>
 window.requestAnimFrame = ( function() {
 	return window.requestAnimationFrame ||
